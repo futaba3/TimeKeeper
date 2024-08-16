@@ -10,6 +10,9 @@ import Combine
 
 class CountDownTimerViewModel: ObservableObject {
     @Published var timeRemaining: TimeInterval = 0
+    @Published var remainTimeAlertIsVisible: Bool = false
+    @Published var isBlinking: Bool = false
+    
     private var timer: AnyCancellable?
     
     var hours: Int {
@@ -32,13 +35,19 @@ class CountDownTimerViewModel: ObservableObject {
             .autoconnect()
             .sink { [weak self] _ in
                 guard let self else { return }
-                if self.timeRemaining > 0 {
-                    self.timeRemaining -= 1
-                } else {
-                    self.timer?.cancel()
-
-                }
+                updateTime()
             }
+    }
+    
+    private func updateTime() {
+        if timeRemaining > 0 {
+            timeRemaining -= 1
+            if timeRemaining == 30 {
+                startBlinking()
+            }
+        } else {
+            timer?.cancel()
+        }
     }
     
     func stopTimer() {
@@ -48,5 +57,18 @@ class CountDownTimerViewModel: ObservableObject {
     func resetTimer() {
         timer?.cancel()
         timeRemaining = 0
+    }
+    
+    func startBlinking() {
+        remainTimeAlertIsVisible = true
+        
+        withAnimation{
+            isBlinking = true
+        }
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 5) {
+            self.isBlinking = false
+            self.remainTimeAlertIsVisible = false
+        }
     }
 }

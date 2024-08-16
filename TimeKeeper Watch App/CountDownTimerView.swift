@@ -14,40 +14,41 @@ struct CountDownTimerView: View {
     var body: some View {
         VStack {
             // 残り時間が30秒前になったらアラートを数字の上部に表示して10秒後に消える
-            if viewModel.timeRemaining == 30 {
+            if viewModel.remainTimeAlertIsVisible {
                 Text("30秒前")
-                    .font(.title)
+                    .font(.headline)
+                    .fontWeight(.bold)
                     .foregroundColor(.red)
-                    .transition(.move(edge: .top))
-                    .animation(.easeInOut(duration: 1))
-                    .onAppear {
-                        DispatchQueue.main.asyncAfter(deadline: .now() + 10) {
-                            withAnimation {
-                                viewModel.timeRemaining = 0
-                            }
-                        }
-                    }
+                    .opacity(viewModel.isBlinking ? 1.0 : 0.0)
+                    .animation(Animation.easeOut(duration: 1.0).repeatForever(autoreverses: true), value: viewModel.isBlinking)
+            } else {
+                Text(Date(), style: .time)
+                    .fontWeight(.bold)
             }
             
             if viewModel.timeRemaining >= 3600 {
                 Text("\(viewModel.hours, specifier: "%02d"):\(viewModel.minutes, specifier: "%02d"):\(viewModel.seconds, specifier: "%02d")")
                     .font(.largeTitle)
+                    .fontWeight(.bold)
                     .monospacedDigit() // 数字の幅が一定になるフォントスタイル
             } else {
                 Text("\(viewModel.minutes, specifier: "%02d"):\(viewModel.seconds, specifier: "%02d")")
                     .font(.largeTitle)
+                    .fontWeight(.bold)
                     .monospacedDigit()
             }
             Button(action: {
                 viewModel.stopTimer()
             }, label: {
                 Text("ストップ")
+                    .fontWeight(.bold)
             })
             Button(action: {
                 viewModel.resetTimer()
                 isTimerRunning = false
             }, label: {
                 Text("リセット")
+                    .fontWeight(.bold)
             })
             .onAppear {
                 viewModel.startTimer(duration: viewModel.timeRemaining)
