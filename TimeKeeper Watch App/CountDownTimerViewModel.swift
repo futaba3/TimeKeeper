@@ -12,6 +12,18 @@ class CountDownTimerViewModel: ObservableObject {
     @Published var timeRemaining: TimeInterval = 0
     private var timer: AnyCancellable?
     
+    var hours: Int {
+        return Int(timeRemaining) / 3600
+    }
+    
+    var minutes: Int {
+        return (Int(timeRemaining) % 3600) / 60
+    }
+    
+    var seconds: Int {
+        return Int(timeRemaining) % 60
+    }
+    
     func startTimer(duration: TimeInterval) {
         self.timeRemaining = duration
         timer?.cancel()
