@@ -15,6 +15,12 @@
 		85FBC9972C6F65C800FC957C /* TimeKeeper_Watch_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85FBC9962C6F65C800FC957C /* TimeKeeper_Watch_AppTests.swift */; };
 		85FBC9A12C6F65C800FC957C /* TimeKeeper_Watch_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85FBC9A02C6F65C800FC957C /* TimeKeeper_Watch_AppUITests.swift */; };
 		85FBC9A32C6F65C800FC957C /* TimeKeeper_Watch_AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85FBC9A22C6F65C800FC957C /* TimeKeeper_Watch_AppUITestsLaunchTests.swift */; };
+		85FBC9B42C6F6BE400FC957C /* CountDownTimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85FBC9B32C6F6BE400FC957C /* CountDownTimerView.swift */; };
+		85FBC9B62C6F6C0900FC957C /* CountDownTimerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85FBC9B52C6F6C0900FC957C /* CountDownTimerViewModel.swift */; };
+		85FBC9B82C6F6C1F00FC957C /* EndTimePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85FBC9B72C6F6C1F00FC957C /* EndTimePickerView.swift */; };
+		85FBC9BA2C6F6C3600FC957C /* EndTimePickerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85FBC9B92C6F6C3600FC957C /* EndTimePickerViewModel.swift */; };
+		85FBC9BC2C6F6C4A00FC957C /* InitialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85FBC9BB2C6F6C4A00FC957C /* InitialView.swift */; };
+		85FBC9BE2C6F6CA500FC957C /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85FBC9BD2C6F6CA500FC957C /* HomeScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +73,12 @@
 		85FBC99C2C6F65C800FC957C /* TimeKeeper Watch AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "TimeKeeper Watch AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		85FBC9A02C6F65C800FC957C /* TimeKeeper_Watch_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeKeeper_Watch_AppUITests.swift; sourceTree = "<group>"; };
 		85FBC9A22C6F65C800FC957C /* TimeKeeper_Watch_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeKeeper_Watch_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		85FBC9B32C6F6BE400FC957C /* CountDownTimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountDownTimerView.swift; sourceTree = "<group>"; };
+		85FBC9B52C6F6C0900FC957C /* CountDownTimerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountDownTimerViewModel.swift; sourceTree = "<group>"; };
+		85FBC9B72C6F6C1F00FC957C /* EndTimePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndTimePickerView.swift; sourceTree = "<group>"; };
+		85FBC9B92C6F6C3600FC957C /* EndTimePickerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndTimePickerViewModel.swift; sourceTree = "<group>"; };
+		85FBC9BB2C6F6C4A00FC957C /* InitialView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialView.swift; sourceTree = "<group>"; };
+		85FBC9BD2C6F6CA500FC957C /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,7 +133,13 @@
 				85FBC9852C6F65C700FC957C /* TimeKeeperApp.swift */,
 				85FBC9872C6F65C700FC957C /* ContentView.swift */,
 				85FBC9892C6F65C800FC957C /* Assets.xcassets */,
+				85FBC9B32C6F6BE400FC957C /* CountDownTimerView.swift */,
+				85FBC9B52C6F6C0900FC957C /* CountDownTimerViewModel.swift */,
+				85FBC9B72C6F6C1F00FC957C /* EndTimePickerView.swift */,
+				85FBC9B92C6F6C3600FC957C /* EndTimePickerViewModel.swift */,
 				85FBC98B2C6F65C800FC957C /* Preview Content */,
+				85FBC9BB2C6F6C4A00FC957C /* InitialView.swift */,
+				85FBC9BD2C6F6CA500FC957C /* HomeScreen.swift */,
 			);
 			path = "TimeKeeper Watch App";
 			sourceTree = "<group>";
@@ -309,8 +327,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				85FBC9B42C6F6BE400FC957C /* CountDownTimerView.swift in Sources */,
 				85FBC9882C6F65C700FC957C /* ContentView.swift in Sources */,
+				85FBC9B62C6F6C0900FC957C /* CountDownTimerViewModel.swift in Sources */,
+				85FBC9B82C6F6C1F00FC957C /* EndTimePickerView.swift in Sources */,
+				85FBC9BE2C6F6CA500FC957C /* HomeScreen.swift in Sources */,
 				85FBC9862C6F65C700FC957C /* TimeKeeperApp.swift in Sources */,
+				85FBC9BC2C6F6C4A00FC957C /* InitialView.swift in Sources */,
+				85FBC9BA2C6F6C3600FC957C /* EndTimePickerViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
