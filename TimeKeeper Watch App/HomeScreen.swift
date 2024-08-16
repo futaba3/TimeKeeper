@@ -8,8 +8,26 @@
 import SwiftUI
 
 struct HomeScreen: View {
+    @StateObject private var timerViewModel = CountDownTimerViewModel()
+    @StateObject private var timePickerViewModel = EndTimePickerViewModel()
+    
+    @State private var isTimerRunning = false
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationStack {
+            if isTimerRunning {
+                CountDownTimerView(viewModel: timerViewModel)
+                    .onDisappear{
+                        isTimerRunning = false
+                    }
+            } else {
+                EndTimePickerView(viewModel: timePickerViewModel) { selectedTime in
+                    timerViewModel.startTimer(duration: selectedTime)
+                    isTimerRunning = true
+                }
+            }
+            
+        }
     }
 }
 

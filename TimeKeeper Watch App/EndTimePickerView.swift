@@ -9,6 +9,7 @@ import SwiftUI
 
 struct EndTimePickerView: View {
     @ObservedObject var viewModel: EndTimePickerViewModel
+    
     var onTimeSelected: (TimeInterval) -> Void
     
     var body: some View {
