@@ -1,0 +1,698 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		85FBC9812C6F65C700FC957C /* TimeKeeper Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 85FBC9802C6F65C700FC957C /* TimeKeeper Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		85FBC9862C6F65C700FC957C /* TimeKeeperApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85FBC9852C6F65C700FC957C /* TimeKeeperApp.swift */; };
+		85FBC9882C6F65C700FC957C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85FBC9872C6F65C700FC957C /* ContentView.swift */; };
+		85FBC98A2C6F65C800FC957C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 85FBC9892C6F65C800FC957C /* Assets.xcassets */; };
+		85FBC98D2C6F65C800FC957C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 85FBC98C2C6F65C800FC957C /* Preview Assets.xcassets */; };
+		85FBC9972C6F65C800FC957C /* TimeKeeper_Watch_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85FBC9962C6F65C800FC957C /* TimeKeeper_Watch_AppTests.swift */; };
+		85FBC9A12C6F65C800FC957C /* TimeKeeper_Watch_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85FBC9A02C6F65C800FC957C /* TimeKeeper_Watch_AppUITests.swift */; };
+		85FBC9A32C6F65C800FC957C /* TimeKeeper_Watch_AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85FBC9A22C6F65C800FC957C /* TimeKeeper_Watch_AppUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		85FBC9822C6F65C700FC957C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 85FBC9742C6F65C700FC957C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 85FBC97F2C6F65C700FC957C;
+			remoteInfo = "TimeKeeper Watch App";
+		};
+		85FBC9932C6F65C800FC957C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 85FBC9742C6F65C700FC957C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 85FBC97F2C6F65C700FC957C;
+			remoteInfo = "TimeKeeper Watch App";
+		};
+		85FBC99D2C6F65C800FC957C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 85FBC9742C6F65C700FC957C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 85FBC97F2C6F65C700FC957C;
+			remoteInfo = "TimeKeeper Watch App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		85FBC9A92C6F65C800FC957C /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				85FBC9812C6F65C700FC957C /* TimeKeeper Watch App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		85FBC97A2C6F65C700FC957C /* TimeKeeper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TimeKeeper.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		85FBC9802C6F65C700FC957C /* TimeKeeper Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TimeKeeper Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		85FBC9852C6F65C700FC957C /* TimeKeeperApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeKeeperApp.swift; sourceTree = "<group>"; };
+		85FBC9872C6F65C700FC957C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		85FBC9892C6F65C800FC957C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		85FBC98C2C6F65C800FC957C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		85FBC9922C6F65C800FC957C /* TimeKeeper Watch AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "TimeKeeper Watch AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		85FBC9962C6F65C800FC957C /* TimeKeeper_Watch_AppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeKeeper_Watch_AppTests.swift; sourceTree = "<group>"; };
+		85FBC99C2C6F65C800FC957C /* TimeKeeper Watch AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "TimeKeeper Watch AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		85FBC9A02C6F65C800FC957C /* TimeKeeper_Watch_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeKeeper_Watch_AppUITests.swift; sourceTree = "<group>"; };
+		85FBC9A22C6F65C800FC957C /* TimeKeeper_Watch_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeKeeper_Watch_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		85FBC97D2C6F65C700FC957C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		85FBC98F2C6F65C800FC957C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		85FBC9992C6F65C800FC957C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		85FBC9732C6F65C700FC957C = {
+			isa = PBXGroup;
+			children = (
+				85FBC9842C6F65C700FC957C /* TimeKeeper Watch App */,
+				85FBC9952C6F65C800FC957C /* TimeKeeper Watch AppTests */,
+				85FBC99F2C6F65C800FC957C /* TimeKeeper Watch AppUITests */,
+				85FBC97B2C6F65C700FC957C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		85FBC97B2C6F65C700FC957C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				85FBC97A2C6F65C700FC957C /* TimeKeeper.app */,
+				85FBC9802C6F65C700FC957C /* TimeKeeper Watch App.app */,
+				85FBC9922C6F65C800FC957C /* TimeKeeper Watch AppTests.xctest */,
+				85FBC99C2C6F65C800FC957C /* TimeKeeper Watch AppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		85FBC9842C6F65C700FC957C /* TimeKeeper Watch App */ = {
+			isa = PBXGroup;
+			children = (
+				85FBC9852C6F65C700FC957C /* TimeKeeperApp.swift */,
+				85FBC9872C6F65C700FC957C /* ContentView.swift */,
+				85FBC9892C6F65C800FC957C /* Assets.xcassets */,
+				85FBC98B2C6F65C800FC957C /* Preview Content */,
+			);
+			path = "TimeKeeper Watch App";
+			sourceTree = "<group>";
+		};
+		85FBC98B2C6F65C800FC957C /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				85FBC98C2C6F65C800FC957C /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		85FBC9952C6F65C800FC957C /* TimeKeeper Watch AppTests */ = {
+			isa = PBXGroup;
+			children = (
+				85FBC9962C6F65C800FC957C /* TimeKeeper_Watch_AppTests.swift */,
+			);
+			path = "TimeKeeper Watch AppTests";
+			sourceTree = "<group>";
+		};
+		85FBC99F2C6F65C800FC957C /* TimeKeeper Watch AppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				85FBC9A02C6F65C800FC957C /* TimeKeeper_Watch_AppUITests.swift */,
+				85FBC9A22C6F65C800FC957C /* TimeKeeper_Watch_AppUITestsLaunchTests.swift */,
+			);
+			path = "TimeKeeper Watch AppUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		85FBC9792C6F65C700FC957C /* TimeKeeper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 85FBC9AA2C6F65C800FC957C /* Build configuration list for PBXNativeTarget "TimeKeeper" */;
+			buildPhases = (
+				85FBC9782C6F65C700FC957C /* Resources */,
+				85FBC9A92C6F65C800FC957C /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				85FBC9832C6F65C700FC957C /* PBXTargetDependency */,
+			);
+			name = TimeKeeper;
+			productName = TimeKeeper;
+			productReference = 85FBC97A2C6F65C700FC957C /* TimeKeeper.app */;
+			productType = "com.apple.product-type.application.watchapp2-container";
+		};
+		85FBC97F2C6F65C700FC957C /* TimeKeeper Watch App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 85FBC9A62C6F65C800FC957C /* Build configuration list for PBXNativeTarget "TimeKeeper Watch App" */;
+			buildPhases = (
+				85FBC97C2C6F65C700FC957C /* Sources */,
+				85FBC97D2C6F65C700FC957C /* Frameworks */,
+				85FBC97E2C6F65C700FC957C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "TimeKeeper Watch App";
+			productName = "TimeKeeper Watch App";
+			productReference = 85FBC9802C6F65C700FC957C /* TimeKeeper Watch App.app */;
+			productType = "com.apple.product-type.application";
+		};
+		85FBC9912C6F65C800FC957C /* TimeKeeper Watch AppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 85FBC9AD2C6F65C800FC957C /* Build configuration list for PBXNativeTarget "TimeKeeper Watch AppTests" */;
+			buildPhases = (
+				85FBC98E2C6F65C800FC957C /* Sources */,
+				85FBC98F2C6F65C800FC957C /* Frameworks */,
+				85FBC9902C6F65C800FC957C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				85FBC9942C6F65C800FC957C /* PBXTargetDependency */,
+			);
+			name = "TimeKeeper Watch AppTests";
+			productName = "TimeKeeper Watch AppTests";
+			productReference = 85FBC9922C6F65C800FC957C /* TimeKeeper Watch AppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		85FBC99B2C6F65C800FC957C /* TimeKeeper Watch AppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 85FBC9B02C6F65C800FC957C /* Build configuration list for PBXNativeTarget "TimeKeeper Watch AppUITests" */;
+			buildPhases = (
+				85FBC9982C6F65C800FC957C /* Sources */,
+				85FBC9992C6F65C800FC957C /* Frameworks */,
+				85FBC99A2C6F65C800FC957C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				85FBC99E2C6F65C800FC957C /* PBXTargetDependency */,
+			);
+			name = "TimeKeeper Watch AppUITests";
+			productName = "TimeKeeper Watch AppUITests";
+			productReference = 85FBC99C2C6F65C800FC957C /* TimeKeeper Watch AppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		85FBC9742C6F65C700FC957C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					85FBC9792C6F65C700FC957C = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					85FBC97F2C6F65C700FC957C = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					85FBC9912C6F65C800FC957C = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 85FBC97F2C6F65C700FC957C;
+					};
+					85FBC99B2C6F65C800FC957C = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 85FBC97F2C6F65C700FC957C;
+					};
+				};
+			};
+			buildConfigurationList = 85FBC9772C6F65C700FC957C /* Build configuration list for PBXProject "TimeKeeper" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 85FBC9732C6F65C700FC957C;
+			productRefGroup = 85FBC97B2C6F65C700FC957C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				85FBC9792C6F65C700FC957C /* TimeKeeper */,
+				85FBC97F2C6F65C700FC957C /* TimeKeeper Watch App */,
+				85FBC9912C6F65C800FC957C /* TimeKeeper Watch AppTests */,
+				85FBC99B2C6F65C800FC957C /* TimeKeeper Watch AppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		85FBC9782C6F65C700FC957C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		85FBC97E2C6F65C700FC957C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85FBC98D2C6F65C800FC957C /* Preview Assets.xcassets in Resources */,
+				85FBC98A2C6F65C800FC957C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		85FBC9902C6F65C800FC957C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		85FBC99A2C6F65C800FC957C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		85FBC97C2C6F65C700FC957C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85FBC9882C6F65C700FC957C /* ContentView.swift in Sources */,
+				85FBC9862C6F65C700FC957C /* TimeKeeperApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		85FBC98E2C6F65C800FC957C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85FBC9972C6F65C800FC957C /* TimeKeeper_Watch_AppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		85FBC9982C6F65C800FC957C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85FBC9A12C6F65C800FC957C /* TimeKeeper_Watch_AppUITests.swift in Sources */,
+				85FBC9A32C6F65C800FC957C /* TimeKeeper_Watch_AppUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		85FBC9832C6F65C700FC957C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 85FBC97F2C6F65C700FC957C /* TimeKeeper Watch App */;
+			targetProxy = 85FBC9822C6F65C700FC957C /* PBXContainerItemProxy */;
+		};
+		85FBC9942C6F65C800FC957C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 85FBC97F2C6F65C700FC957C /* TimeKeeper Watch App */;
+			targetProxy = 85FBC9932C6F65C800FC957C /* PBXContainerItemProxy */;
+		};
+		85FBC99E2C6F65C800FC957C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 85FBC97F2C6F65C700FC957C /* TimeKeeper Watch App */;
+			targetProxy = 85FBC99D2C6F65C800FC957C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		85FBC9A42C6F65C800FC957C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		85FBC9A52C6F65C800FC957C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		85FBC9A72C6F65C800FC957C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"TimeKeeper Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = NWPYC5C8JF;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = TimeKeeper;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKWatchOnly = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kudoayana.TimeKeeper.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 10.5;
+			};
+			name = Debug;
+		};
+		85FBC9A82C6F65C800FC957C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"TimeKeeper Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = NWPYC5C8JF;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = TimeKeeper;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKWatchOnly = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kudoayana.TimeKeeper.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 10.5;
+			};
+			name = Release;
+		};
+		85FBC9AB2C6F65C800FC957C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NWPYC5C8JF;
+				INFOPLIST_KEY_CFBundleDisplayName = TimeKeeper;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kudoayana.TimeKeeper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		85FBC9AC2C6F65C800FC957C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NWPYC5C8JF;
+				INFOPLIST_KEY_CFBundleDisplayName = TimeKeeper;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kudoayana.TimeKeeper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		85FBC9AE2C6F65C800FC957C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NWPYC5C8JF;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kudoayana.TimeKeeper-Watch-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TimeKeeper Watch App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TimeKeeper Watch App";
+				WATCHOS_DEPLOYMENT_TARGET = 10.5;
+			};
+			name = Debug;
+		};
+		85FBC9AF2C6F65C800FC957C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NWPYC5C8JF;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kudoayana.TimeKeeper-Watch-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TimeKeeper Watch App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TimeKeeper Watch App";
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 10.5;
+			};
+			name = Release;
+		};
+		85FBC9B12C6F65C800FC957C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NWPYC5C8JF;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kudoayana.TimeKeeper-Watch-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_TARGET_NAME = "TimeKeeper Watch App";
+				WATCHOS_DEPLOYMENT_TARGET = 10.5;
+			};
+			name = Debug;
+		};
+		85FBC9B22C6F65C800FC957C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NWPYC5C8JF;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kudoayana.TimeKeeper-Watch-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_TARGET_NAME = "TimeKeeper Watch App";
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 10.5;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		85FBC9772C6F65C700FC957C /* Build configuration list for PBXProject "TimeKeeper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				85FBC9A42C6F65C800FC957C /* Debug */,
+				85FBC9A52C6F65C800FC957C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		85FBC9A62C6F65C800FC957C /* Build configuration list for PBXNativeTarget "TimeKeeper Watch App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				85FBC9A72C6F65C800FC957C /* Debug */,
+				85FBC9A82C6F65C800FC957C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		85FBC9AA2C6F65C800FC957C /* Build configuration list for PBXNativeTarget "TimeKeeper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				85FBC9AB2C6F65C800FC957C /* Debug */,
+				85FBC9AC2C6F65C800FC957C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		85FBC9AD2C6F65C800FC957C /* Build configuration list for PBXNativeTarget "TimeKeeper Watch AppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				85FBC9AE2C6F65C800FC957C /* Debug */,
+				85FBC9AF2C6F65C800FC957C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		85FBC9B02C6F65C800FC957C /* Build configuration list for PBXNativeTarget "TimeKeeper Watch AppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				85FBC9B12C6F65C800FC957C /* Debug */,
+				85FBC9B22C6F65C800FC957C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 85FBC9742C6F65C700FC957C /* Project object */;
+}
