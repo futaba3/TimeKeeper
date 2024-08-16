@@ -9,6 +9,8 @@ import SwiftUI
 
 struct CountDownTimerView: View {
     @ObservedObject var viewModel: CountDownTimerViewModel
+    @Binding var isTimerRunning: Bool
+    
     var body: some View {
         VStack {
             // 残り時間が30秒前になったらアラートを数字の上部に表示して10秒後に消える
@@ -41,6 +43,12 @@ struct CountDownTimerView: View {
             }, label: {
                 Text("ストップ")
             })
+            Button(action: {
+                viewModel.resetTimer()
+                isTimerRunning = false
+            }, label: {
+                Text("リセット")
+            })
             .onAppear {
                 viewModel.startTimer(duration: viewModel.timeRemaining)
             }
@@ -49,5 +57,5 @@ struct CountDownTimerView: View {
 }
 
 #Preview {
-    CountDownTimerView(viewModel: CountDownTimerViewModel())
+    CountDownTimerView(viewModel: CountDownTimerViewModel(), isTimerRunning: .constant(true))
 }

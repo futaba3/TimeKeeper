@@ -44,4 +44,9 @@ class CountDownTimerViewModel: ObservableObject {
     func stopTimer() {
         timer?.cancel()
     }
+    
+    func resetTimer() {
+        timer?.cancel()
+        timeRemaining = 0
+    }
 }

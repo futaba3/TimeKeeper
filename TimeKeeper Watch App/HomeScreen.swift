@@ -16,7 +16,7 @@ struct HomeScreen: View {
     var body: some View {
         NavigationStack {
             if isTimerRunning {
-                CountDownTimerView(viewModel: timerViewModel)
+                CountDownTimerView(viewModel: timerViewModel, isTimerRunning: $isTimerRunning)
                     .onDisappear{
                         isTimerRunning = false
                     }
