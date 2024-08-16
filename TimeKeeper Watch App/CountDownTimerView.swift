@@ -30,9 +30,11 @@ struct CountDownTimerView: View {
             if viewModel.timeRemaining >= 3600 {
                 Text("\(viewModel.hours, specifier: "%02d"):\(viewModel.minutes, specifier: "%02d"):\(viewModel.seconds, specifier: "%02d")")
                     .font(.largeTitle)
+                    .monospacedDigit() // 数字の幅が一定になるフォントスタイル
             } else {
                 Text("\(viewModel.minutes, specifier: "%02d"):\(viewModel.seconds, specifier: "%02d")")
                     .font(.largeTitle)
+                    .monospacedDigit()
             }
             Button(action: {
                 viewModel.stopTimer()
