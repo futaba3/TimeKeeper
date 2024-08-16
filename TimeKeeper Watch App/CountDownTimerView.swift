@@ -13,7 +13,7 @@ struct CountDownTimerView: View {
     
     var body: some View {
         VStack {
-            // 残り時間が30秒前になったらアラートを数字の上部に表示して10秒後に消える
+            // 残り時間が30秒前になったらアラートを数字の上部に表示して5秒後に消える
             if viewModel.remainTimeAlertIsVisible {
                 Text("30秒前")
                     .font(.headline)
@@ -22,8 +22,7 @@ struct CountDownTimerView: View {
                     .opacity(viewModel.isBlinking ? 1.0 : 0.0)
                     .animation(Animation.easeOut(duration: 1.0).repeatForever(autoreverses: true), value: viewModel.isBlinking)
             } else {
-                Text(Date(), style: .time)
-                    .fontWeight(.bold)
+                Text("")
             }
             
             if viewModel.timeRemaining >= 3600 {
