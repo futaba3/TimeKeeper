@@ -23,7 +23,7 @@ struct EndTimePickerView: View {
                         Text(String(format: "%02d", hour)).tag(hour)
                     }
                 }
-                .frame(width: 50)
+                .frame(width: 44)
                 
                 Text(":")
                 
@@ -32,7 +32,7 @@ struct EndTimePickerView: View {
                         Text(String(format: "%02d", minute)).tag(minute)
                     }
                 }
-                .frame(width: 50)
+                .frame(width: 44)
                 
                 Text(":")
                 
@@ -41,7 +41,7 @@ struct EndTimePickerView: View {
                         Text(String(format: "%02d", second)).tag(second)
                     }
                 }
-                .frame(width: 50)
+                .frame(width: 44)
             }
             .monospacedDigit()
         }
