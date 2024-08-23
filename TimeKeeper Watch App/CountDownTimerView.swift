@@ -36,12 +36,23 @@ struct CountDownTimerView: View {
                     .fontWeight(.bold)
                     .monospacedDigit()
             }
-            Button(action: {
-                viewModel.stopTimer()
-            }, label: {
-                Text("ストップ")
-                    .fontWeight(.bold)
-            })
+            
+            if viewModel.timerState == .running {
+                Button(action: {
+                    viewModel.stopTimer()
+                }, label: {
+                    Text("ストップ")
+                        .fontWeight(.bold)
+                })
+            } else {
+                Button(action: {
+                    viewModel.startTimer(duration: viewModel.timeRemaining)
+                }, label: {
+                    Text("スタート")
+                        .fontWeight(.bold)
+                })
+                .disabled(viewModel.timeRemaining == 0)
+            }
             Button(action: {
                 viewModel.resetTimer()
                 isTimerRunning = false
@@ -50,7 +61,9 @@ struct CountDownTimerView: View {
                     .fontWeight(.bold)
             })
             .onAppear {
-                viewModel.startTimer(duration: viewModel.timeRemaining)
+                if viewModel.timerState == .running {
+                    viewModel.startTimer(duration: viewModel.timeRemaining)
+                }
             }
         }
     }

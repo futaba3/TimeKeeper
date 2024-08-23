@@ -9,6 +9,7 @@ import SwiftUI
 
 struct EndTimePickerView: View {
     @ObservedObject var viewModel: EndTimePickerViewModel
+    @ObservedObject var timerViewModel: CountDownTimerViewModel
     
     var onTimeSelected: (TimeInterval) -> Void
     
@@ -48,12 +49,14 @@ struct EndTimePickerView: View {
         
         Button(action: {
             onTimeSelected(viewModel.totalSelectedTime())
+            timerViewModel.timerState = .running
         }, label: {
             Text("開始")
         })
+        .disabled(viewModel.selectedHour == 0 && viewModel.selectedMinute == 0 && viewModel.selectedSecond == 0)
     }
 }
 
 #Preview {
-    EndTimePickerView(viewModel: EndTimePickerViewModel()) { _ in }
+    EndTimePickerView(viewModel: EndTimePickerViewModel(), timerViewModel: CountDownTimerViewModel()) { _ in }
 }

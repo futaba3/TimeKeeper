@@ -21,7 +21,7 @@ struct HomeScreen: View {
                         isTimerRunning = false
                     }
             } else {
-                EndTimePickerView(viewModel: timePickerViewModel) { selectedTime in
+                EndTimePickerView(viewModel: timePickerViewModel, timerViewModel: timerViewModel) { selectedTime in
                     timerViewModel.startTimer(duration: selectedTime)
                     isTimerRunning = true
                 }

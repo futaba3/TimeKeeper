@@ -12,8 +12,15 @@ class CountDownTimerViewModel: ObservableObject {
     @Published var timeRemaining: TimeInterval = 0
     @Published var remainTimeAlertIsVisible: Bool = false
     @Published var isBlinking: Bool = false
+    @Published var timerState: TimerState = .stopped
     
     private var timer: AnyCancellable?
+    
+    enum TimerState {
+        case running
+        case stopped
+        case paused
+    }
     
     var hours: Int {
         return Int(timeRemaining) / 3600
@@ -52,11 +59,13 @@ class CountDownTimerViewModel: ObservableObject {
     
     func stopTimer() {
         timer?.cancel()
+        timerState = .paused
     }
     
     func resetTimer() {
         timer?.cancel()
         timeRemaining = 0
+        timerState = .stopped
     }
     
     func startBlinking() {
