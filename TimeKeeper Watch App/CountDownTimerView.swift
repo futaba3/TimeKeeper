@@ -9,18 +9,23 @@ import SwiftUI
 
 struct CountDownTimerView: View {
     @ObservedObject var viewModel: CountDownTimerViewModel
+    @ObservedObject var alertSettingsViewModel: AlertSettingsViewModel
     @Binding var isTimerRunning: Bool
     
     var body: some View {
         VStack {
             // 残り時間が30秒前になったらアラートを数字の上部に表示して5秒後に消える
             if viewModel.remainTimeAlertIsVisible {
-                Text("30秒前")
-                    .font(.headline)
-                    .fontWeight(.bold)
-                    .foregroundColor(.red)
-                    .opacity(viewModel.isBlinking ? 1.0 : 0.0)
-                    .animation(Animation.easeOut(duration: 1.0).repeatForever(autoreverses: true), value: viewModel.isBlinking)
+                if let firstThreshold = alertSettingsViewModel.alertThreshold.first(where: { $0 == viewModel.timeRemaining }) {
+                    Text("\(Int(firstThreshold))秒前")
+                        .font(.headline)
+                        .fontWeight(.bold)
+                        .foregroundColor(.red)
+                        .opacity(viewModel.isBlinking ? 1.0 : 0.0)
+                        .onAppear{
+                            viewModel.startBlinkingAnimation()
+                        }
+                }
             } else {
                 Text("")
             }
@@ -70,5 +75,5 @@ struct CountDownTimerView: View {
 }
 
 #Preview {
-    CountDownTimerView(viewModel: CountDownTimerViewModel(), isTimerRunning: .constant(true))
+    CountDownTimerView(viewModel: CountDownTimerViewModel(), alertSettingsViewModel: AlertSettingsViewModel(), isTimerRunning: .constant(true))
 }

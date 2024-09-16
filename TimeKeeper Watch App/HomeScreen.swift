@@ -10,13 +10,14 @@ import SwiftUI
 struct HomeScreen: View {
     @StateObject private var timerViewModel = CountDownTimerViewModel()
     @StateObject private var timePickerViewModel = EndTimePickerViewModel()
+    @StateObject private var alertSettingsViewModel = AlertSettingsViewModel()
     
     @State private var isTimerRunning = false
     
     var body: some View {
         NavigationStack {
             if isTimerRunning {
-                CountDownTimerView(viewModel: timerViewModel, isTimerRunning: $isTimerRunning)
+                CountDownTimerView(viewModel: timerViewModel, alertSettingsViewModel: alertSettingsViewModel , isTimerRunning: $isTimerRunning)
                     .onDisappear{
                         isTimerRunning = false
                     }

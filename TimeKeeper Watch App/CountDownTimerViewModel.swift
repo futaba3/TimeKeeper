@@ -68,16 +68,46 @@ class CountDownTimerViewModel: ObservableObject {
         timerState = .stopped
     }
     
+    func startBlinkingAnimation() {
+        withAnimation(Animation.easeInOut(duration: 0.5).repeatForever(autoreverses: true)) {
+                isBlinking = true
+            }
+    }
+    
+    func stopBlinkingAnimation() {
+        isBlinking = false
+        remainTimeAlertIsVisible = false
+    }
+    
     func startBlinking() {
         remainTimeAlertIsVisible = true
+        startBlinkingAnimation()
         
-        withAnimation{
-            isBlinking = true
-        }
+        // 5秒後に点滅を止める
+            DispatchQueue.main.asyncAfter(deadline: .now() + 5) {
+                self.stopBlinkingAnimation()
+            }
         
-        DispatchQueue.main.asyncAfter(deadline: .now() + 5) {
-            self.isBlinking = false
-            self.remainTimeAlertIsVisible = false
-        }
+//        withAnimation(Animation.easeOut(duration: 1.0).repeatForever(autoreverses: true)) {
+//            self.isBlinking = true
+//        }
+//        
+//        DispatchQueue.main.asyncAfter(deadline: .now() + 5) {
+//            self.isBlinking = false
+//            self.remainTimeAlertIsVisible = false
+//        }
+//        Timer.scheduledTimer(withTimeInterval: 0.5, repeats: true) { timer in
+//                withAnimation(Animation.easeOut(duration: 0.5)) {
+//                    self.isBlinking.toggle()
+//                }
+//                // 5秒後にタイマーを無効化してアラートを消す
+//                if self.timeRemaining > 30 || self.timeRemaining == 0 {
+//                    timer.invalidate()
+//                    DispatchQueue.main.async {
+//                        self.isBlinking = false
+//                        self.remainTimeAlertIsVisible = false
+//                    }
+//                }
+//            }
     }
 }
